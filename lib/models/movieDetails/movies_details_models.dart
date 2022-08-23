@@ -1,3 +1,10 @@
+import 'package:app_movies/models/movieDetails/production_companies.dart';
+import 'package:app_movies/models/movieDetails/production_countries.dart';
+import 'package:app_movies/models/movieDetails/spoken_languages.dart';
+
+import 'belongs_to_collection.dart';
+import 'genres.dart';
+
 class MoviesDetailsModels {
   bool? adult;
   String? backdropPath;
@@ -146,112 +153,3 @@ class MoviesDetailsModels {
   }
 }
 
-class BelongsToCollection {
-  int? id;
-  String? name;
-  String? posterPath;
-  String? backdropPath;
-
-  BelongsToCollection({this.id, this.name, this.posterPath, this.backdropPath});
-
-  BelongsToCollection.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    posterPath = json['poster_path'];
-    backdropPath = json['backdrop_path'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['poster_path'] = this.posterPath;
-    data['backdrop_path'] = this.backdropPath;
-    return data;
-  }
-}
-
-class Genres {
-  int? id;
-  String? name;
-
-  Genres({this.id, this.name});
-
-  Genres.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    return data;
-  }
-}
-
-class ProductionCompanies {
-  int? id;
-  String? logoPath;
-  String? name;
-  String? originCountry;
-
-  ProductionCompanies({this.id, this.logoPath, this.name, this.originCountry});
-
-  ProductionCompanies.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    logoPath = json['logo_path'];
-    name = json['name'];
-    originCountry = json['origin_country'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['logo_path'] = this.logoPath;
-    data['name'] = this.name;
-    data['origin_country'] = this.originCountry;
-    return data;
-  }
-}
-
-class ProductionCountries {
-  String? iso31661;
-  String? name;
-
-  ProductionCountries({this.iso31661, this.name});
-
-  ProductionCountries.fromJson(Map<String, dynamic> json) {
-    iso31661 = json['iso_3166_1'];
-    name = json['name'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['iso_3166_1'] = this.iso31661;
-    data['name'] = this.name;
-    return data;
-  }
-}
-
-class SpokenLanguages {
-  String? englishName;
-  String? iso6391;
-  String? name;
-
-  SpokenLanguages({this.englishName, this.iso6391, this.name});
-
-  SpokenLanguages.fromJson(Map<String, dynamic> json) {
-    englishName = json['english_name'];
-    iso6391 = json['iso_639_1'];
-    name = json['name'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['english_name'] = this.englishName;
-    data['iso_639_1'] = this.iso6391;
-    data['name'] = this.name;
-    return data;
-  }
-}

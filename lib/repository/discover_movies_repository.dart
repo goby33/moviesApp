@@ -1,10 +1,7 @@
-import 'dart:convert';
-
-import 'package:app_movies/models/discover_movies_models.dart';
+import 'package:app_movies/models/discoverMovies/discover_movies_models.dart';
 import 'package:app_movies/network/network_helper.dart';
 import 'package:app_movies/network/network_service.dart';
 import 'package:app_movies/network/query_param.dart';
-import '../models/movies_models.dart';
 
 
 

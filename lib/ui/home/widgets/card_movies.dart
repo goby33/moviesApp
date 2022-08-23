@@ -1,16 +1,15 @@
-import 'package:app_movies/models/movies_models.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
+
+import '../../../models/discoverMovies/results.dart';
 
 class CardMovies extends StatelessWidget {
   CardMovies({
     Key? key,
-    required this.dataMovie,
     required this.onPressed,
+    required this.dataMovie,
   }) : super(key: key);
 
-  final MoviesModels dataMovie;
+  final Results dataMovie;
   final void Function() onPressed;
 
   @override
@@ -26,7 +25,7 @@ class CardMovies extends StatelessWidget {
             children: [
               Image.network(
                   'https://image.tmdb.org/t/p/original' +
-                      dataMovie.backdrop_path,
+                      dataMovie.backdropPath.toString(),
                   loadingBuilder: (BuildContext context, Widget child,
                       ImageChunkEvent? loadingProgress) {
                 if (loadingProgress == null) {
@@ -41,7 +40,7 @@ class CardMovies extends StatelessWidget {
                   ),
                 );
               }),
-              Text(dataMovie.title),
+              Text(dataMovie.title.toString()),
               Text("ppp"),
               Text("ppp"),
               Text("ppp"),
