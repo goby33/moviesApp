@@ -1,9 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../models/movies_models.dart';
+
 
 class FilmDetails extends StatelessWidget {
   FilmDetails({Key? key}) : super(key: key);

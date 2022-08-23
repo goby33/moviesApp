@@ -1,8 +1,8 @@
 
 
-import 'package:app_movies/models/movies_models.dart';
 
-import '../models/discover_movies_models.dart';
+
+import '../models/discoverMovies/discover_movies_models.dart';
 
 abstract class DiscoverMoviesState {}
 

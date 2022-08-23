@@ -1,8 +1,8 @@
-import 'package:app_movies/ui/home/widgets/card_movies.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../models/discover_movies_models.dart';
+import '../../../models/discoverMovies/discover_movies_models.dart';
+import 'card_movies.dart';
 
 class DiscoverMoviesWidget extends StatelessWidget {
   DiscoverMoviesWidget(
@@ -20,27 +20,27 @@ class DiscoverMoviesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
-          child:  GridView.builder(
-              itemCount: model.results.length,
-              scrollDirection: Axis.vertical,
-              shrinkWrap: true,// The length Of the array
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 1,
-                childAspectRatio: 1,
-                crossAxisSpacing: 1,
-                mainAxisSpacing: 1,
-              ), // The size of the grid box
-              itemBuilder: (context, index) =>
-                  CardMovies(
-                      dataMovie: model.results[index],
-                      onPressed: () {
-                        GoRouter.of(context).push('/movieDetails');
-                      }
-
-                  )
+        if (model.results!.isNotEmpty)
+          Expanded(
+            child:  GridView.builder(
+                itemCount: model.results?.length,
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,// The length Of the array
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 1,
+                  childAspectRatio: 1,
+                  crossAxisSpacing: 1,
+                  mainAxisSpacing: 1,
+                ), // The size of the grid box
+                itemBuilder: (context, index) =>
+                    CardMovies(
+                        dataMovie: model.results![index],
+                        onPressed: () {
+                          GoRouter.of(context).push('/movieDetails');
+                        }
+                    )
+            ),
           ),
-        ),
         // BUTTO
         Container(
           child: Row(
@@ -51,11 +51,12 @@ class DiscoverMoviesWidget extends StatelessWidget {
                 style: ElevatedButton.styleFrom(primary: Colors.black),
               ),
               Text(model.page.toString()),
-              ElevatedButton(
-                onPressed: onPressedNext,
-                child: const Text('next page'),
-                style: ElevatedButton.styleFrom(primary: Colors.black),
-              ),
+              if (model.page != 2)
+                ElevatedButton(
+                  onPressed: onPressedNext,
+                  child: const Text('next page'),
+                  style: ElevatedButton.styleFrom(primary: Colors.black),
+                ),
             ],
           ),
         ),
