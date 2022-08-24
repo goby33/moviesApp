@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
-
 class FilmDetails extends StatelessWidget {
-  FilmDetails({Key? key}) : super(key: key);
+  FilmDetails({Key? key, required this.idMovie}) : super(key: key);
+
+  final String idMovie;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class FilmDetails extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 30, bottom: 20),
             child: Text(
-              original_title,
+              original_title + idMovie,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             ),
           ),

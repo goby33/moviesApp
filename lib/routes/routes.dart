@@ -22,6 +22,7 @@ final GoRouter router = GoRouter(routes: [
       path: '/movieDetails',
       name: 'movieDetails',
       builder: (context, state) {
-        return FilmDetails();
+        final idMovie = state.queryParams['idMovie'];
+        return FilmDetails(idMovie: idMovie!);
       }),
 ], initialLocation: '/', debugLogDiagnostics: true);

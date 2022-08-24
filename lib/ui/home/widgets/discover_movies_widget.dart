@@ -36,7 +36,8 @@ class DiscoverMoviesWidget extends StatelessWidget {
                     CardMovies(
                         dataMovie: model.results![index],
                         onPressed: () {
-                          GoRouter.of(context).push('/movieDetails');
+                          int? id = model.results![index].id;
+                          GoRouter.of(context).push('/movieDetails?idMovie=$id');
                         }
                     )
             ),
