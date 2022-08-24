@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../bloc/discover_movies_bloc.dart';
-import '../../bloc/discover_movies_event.dart';
-import '../../bloc/discover_movies_state.dart';
+import '../../bloc/discoverMovies/discover_movies_bloc.dart';
+import '../../bloc/discoverMovies/discover_movies_event.dart';
+import '../../bloc/discoverMovies/discover_movies_state.dart';
 import '../../repository/discover_movies_repository.dart';
 import 'widgets/discover_movies_widget.dart';
 

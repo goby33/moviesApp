@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../repository/discover_movies_repository.dart';
+import '../repository/movie_details_repository.dart';
 import '../ui/filmDetails/film_details.dart';
 import '../ui/home/home_screen.dart';
 
@@ -23,6 +24,12 @@ final GoRouter router = GoRouter(routes: [
       name: 'movieDetails',
       builder: (context, state) {
         final idMovie = state.queryParams['idMovie'];
-        return FilmDetails(idMovie: idMovie!);
+        return RepositoryProvider(
+          create: (_) => MovieDetailsRepository(),
+          child:  MaterialApp(
+            home: FilmDetails(idMovie: idMovie!),
+          ),
+        );
+
       }),
 ], initialLocation: '/', debugLogDiagnostics: true);

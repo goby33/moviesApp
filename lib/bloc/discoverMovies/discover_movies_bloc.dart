@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../repository/discover_movies_repository.dart';
+import '../../repository/discover_movies_repository.dart';
 import 'discover_movies_event.dart';
 import 'discover_movies_state.dart';
 
