@@ -23,9 +23,7 @@ class TopBar extends StatelessWidget {
           ),
         ),
         SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30),
-            child: Column(
+          child:Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -36,7 +34,7 @@ class TopBar extends StatelessWidget {
                       ?.copyWith(fontWeight: FontWeight.w600),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 160, bottom: 30),
+                  margin: EdgeInsets.only(top: 160, bottom: 30, left: 20, right: 20),
                   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -55,7 +53,6 @@ class TopBar extends StatelessWidget {
               ],
             ),
           ),
-        ),
       ],
     );
   }

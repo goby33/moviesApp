@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/discoverMovies/results.dart';
+import '../../widgets/stars.dart';
 
 class CardMovies extends StatelessWidget {
   CardMovies({
@@ -40,10 +41,22 @@ class CardMovies extends StatelessWidget {
                   ),
                 );
               }),
-              Text(dataMovie.title.toString()),
-              Text("ppp"),
-              Text("ppp"),
-              Text("ppp"),
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 20),
+                child: Text(
+                  dataMovie.title.toString(),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 20),
+                child: Text(
+                  textAlign: TextAlign.left,
+                  dataMovie.releaseDate.toString(),
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              Stars(vote: dataMovie.voteAverage!),
             ],
           ),
           shape: RoundedRectangleBorder(

@@ -14,7 +14,11 @@ class homeScreen extends StatelessWidget {
     return new Scaffold(
       body: TopBar(
         WidgetChild: DiscoverMoviesScreen()
-      )
+      ),
+        bottomNavigationBar: Container(
+          color: Color.fromARGB(255, 255, 223, 54),
+          height: 15,
+        )
     );
   }
 }

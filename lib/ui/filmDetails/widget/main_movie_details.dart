@@ -1,4 +1,5 @@
 import 'package:app_movies/models/movieDetails/movies_details_models.dart';
+import 'package:app_movies/ui/widgets/stars.dart';
 import 'package:flutter/material.dart';
 
 class MainMovieDetails extends StatelessWidget {
@@ -54,17 +55,7 @@ class MainMovieDetails extends StatelessWidget {
             style: TextStyle(fontSize: 15),
           ),
         ),
-        Row(
-          children: [
-            for (var i = 0; i < 3; i = i + 1)
-              Icon(
-                Icons.star,
-                color: Colors.pink,
-                size: 24.0,
-                semanticLabel: 'Text to announce in accessibility modes',
-              ),
-          ],
-        ),
+        Stars(vote: 3),
         Padding(
           padding: EdgeInsets.only(top: 50),
           child: Text(

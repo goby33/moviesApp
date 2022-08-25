@@ -20,7 +20,7 @@ class FilmDetails extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.black, //change your color here
         ),
-        title: Text("Sample ppp"),
+        title: Text("Movies Details"),
         centerTitle: true,
         leading: BackButton(
             color: Colors.black,

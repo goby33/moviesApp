@@ -5,7 +5,7 @@ import '../../../models/discoverMovies/discover_movies_models.dart';
 import 'card_movies.dart';
 
 class DiscoverMoviesWidget extends StatelessWidget {
-  DiscoverMoviesWidget(
+  const DiscoverMoviesWidget(
       {Key? key,
       required this.model,
       required this.onPressedPrevious,
@@ -22,41 +22,71 @@ class DiscoverMoviesWidget extends StatelessWidget {
       children: [
         if (model.results!.isNotEmpty)
           Expanded(
-            child:  GridView.builder(
+            child: GridView.builder(
+              padding: EdgeInsets.symmetric(horizontal: 20),
                 itemCount: model.results?.length,
                 scrollDirection: Axis.vertical,
-                shrinkWrap: true,// The length Of the array
+                shrinkWrap: true, // The length Of the array
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 1,
                   childAspectRatio: 1,
                   crossAxisSpacing: 1,
                   mainAxisSpacing: 1,
                 ), // The size of the grid box
-                itemBuilder: (context, index) =>
-                    CardMovies(
-                        dataMovie: model.results![index],
-                        onPressed: () {
-                          int? id = model.results![index].id;
-                          GoRouter.of(context).push('/movieDetails?idMovie=$id');
-                        }
-                    )
-            ),
+                itemBuilder: (context, index) => CardMovies(
+                    dataMovie: model.results![index],
+                    onPressed: () {
+                      int? id = model.results![index].id;
+                      GoRouter.of(context).push('/movieDetails?idMovie=$id');
+                    })),
           ),
         // BUTTO
         Container(
+          color: Color.fromARGB(255, 255, 223, 54),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton(
-                onPressed: onPressedPrevious,
-                child: const Text('Previous page'),
-                style: ElevatedButton.styleFrom(primary: Colors.black),
+              if (model.page != 1)
+                Expanded(
+                  flex: 4,
+                  child: ElevatedButton(
+                    onPressed: onPressedPrevious,
+                    style: ElevatedButton.styleFrom(primary: Colors.black),
+                    child: const Text('Previous page'),
+                  ),
+                ),
+              Expanded(
+                flex: 2,
+                child: Center(
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1),
+                      shape: BoxShape.circle,
+                      color: Colors.white10,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          model.page.toString(),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
-              Text(model.page.toString()),
-              if (model.page != 2)
-                ElevatedButton(
-                  onPressed: onPressedNext,
-                  child: const Text('next page'),
-                  style: ElevatedButton.styleFrom(primary: Colors.black),
+              if (model.page != model.totalPages)
+                Expanded(
+                  flex: 4,
+                  child: ElevatedButton(
+                    onPressed: onPressedNext,
+                    style: ElevatedButton.styleFrom(primary: Colors.black),
+                    child: const Text('Next page'),
+                  ),
                 ),
             ],
           ),

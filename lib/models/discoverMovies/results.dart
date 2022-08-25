@@ -11,6 +11,7 @@ class Results {
   String? _releaseDate;
   String? _title;
   bool? _video;
+  num? _voteAverage;
   int? _voteCount;
 
   Results(
@@ -26,6 +27,7 @@ class Results {
         String? releaseDate,
         String? title,
         bool? video,
+        int? voteAverage,
         int? voteCount}) {
     if (adult != null) {
       this._adult = adult;
@@ -63,6 +65,9 @@ class Results {
     if (video != null) {
       this._video = video;
     }
+    if (voteAverage != null) {
+      this._voteAverage = voteAverage;
+    }
     if (voteCount != null) {
       this._voteCount = voteCount;
     }
@@ -91,8 +96,10 @@ class Results {
   set releaseDate(String? releaseDate) => _releaseDate = releaseDate;
   String? get title => _title;
   set title(String? title) => _title = title;
+  num? get voteAverage => _voteAverage;
   bool? get video => _video;
   set video(bool? video) => _video = video;
+
   int? get voteCount => _voteCount;
   set voteCount(int? voteCount) => _voteCount = voteCount;
 
@@ -109,6 +116,7 @@ class Results {
     _releaseDate = json['release_date'];
     _title = json['title'];
     _video = json['video'];
+    _voteAverage = json['vote_average'];
     _voteCount = json['vote_count'];
   }
 
@@ -126,6 +134,7 @@ class Results {
     data['release_date'] = this._releaseDate;
     data['title'] = this._title;
     data['video'] = this._video;
+    data['vote_average'] = this._voteAverage;
     data['vote_count'] = this._voteCount;
     return data;
   }
