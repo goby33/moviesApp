@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../home/discover_movies_screen.dart';
 
 class TopBar extends StatelessWidget {
-  TopBar({Key? key, this.WidgetChild}) : super(key: key);
+  const TopBar({Key? key, this.WidgetChild}) : super(key: key);
 
   final  WidgetChild;
 
@@ -34,13 +34,13 @@ class TopBar extends StatelessWidget {
                       ?.copyWith(fontWeight: FontWeight.w600),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 160, bottom: 30, left: 20, right: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+                  margin: const EdgeInsets.only(top: 160, bottom: 30, left: 20, right: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(29)
                   ),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                         hintText: "Search",
                         border: InputBorder.none

@@ -18,6 +18,7 @@ class DiscoverMoviesScreen extends StatelessWidget {
         ..add(LoadDiscoverMoviesEvent()),
       child: Center(
         child: BlocBuilder<DiscoverMoviesBloc, DiscoverMoviesState>(builder: (context, state) {
+
             if (state is DiscoverMoviesErrorState) {
               return Text(
                 state.message,
