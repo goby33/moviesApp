@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../models/discoverMovies/discover_movies_models.dart';
+import '../../../models/discoverMovies/results_discover_movies/discover_movies_models.dart';
 import 'card_movies.dart';
 
 class DiscoverMoviesWidget extends StatelessWidget {
@@ -20,26 +20,25 @@ class DiscoverMoviesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        if (model.results!.isNotEmpty)
-          Expanded(
-            child: GridView.builder(
+        Expanded(
+          child: GridView.builder(
               padding: EdgeInsets.symmetric(horizontal: 20),
-                itemCount: model.results?.length,
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true, // The length Of the array
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 1,
-                  childAspectRatio: 1,
-                  crossAxisSpacing: 1,
-                  mainAxisSpacing: 1,
-                ), // The size of the grid box
-                itemBuilder: (context, index) => CardMovies(
-                    dataMovie: model.results![index],
-                    onPressed: () {
-                      int? id = model.results![index].id;
-                      GoRouter.of(context).push('/movieDetails?idMovie=$id');
-                    })),
-          ),
+              itemCount: model.results.length,
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true, // The length Of the array
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 1,
+                childAspectRatio: 1,
+                crossAxisSpacing: 1,
+                mainAxisSpacing: 1,
+              ), // The size of the grid box
+              itemBuilder: (context, index) => CardMovies(
+                  dataMovie: model.results[index],
+                  onPressed: () {
+                    int id = model.results[index].id as int;
+                    GoRouter.of(context).push('/movieDetails?idMovie=$id');
+                  })),
+        ),
         // BUTTO
         Container(
           color: Color.fromARGB(255, 255, 223, 54),
@@ -79,7 +78,7 @@ class DiscoverMoviesWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              if (model.page != model.totalPages)
+              if (model.page != model.total_pages)
                 Expanded(
                   flex: 4,
                   child: ElevatedButton(

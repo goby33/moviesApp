@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/discoverMovies/results.dart';
+import '../../../models/discoverMovies/results_discover_movies/discover_movies_models.dart';
 import '../../widgets/stars.dart';
 
 class CardMovies extends StatelessWidget {
@@ -10,7 +10,7 @@ class CardMovies extends StatelessWidget {
     required this.dataMovie,
   }) : super(key: key);
 
-  final Results dataMovie;
+  final ResultsDiscoverMovies dataMovie;
   final void Function() onPressed;
 
   @override
@@ -26,7 +26,7 @@ class CardMovies extends StatelessWidget {
             children: [
               Image.network(
                   'https://image.tmdb.org/t/p/original' +
-                      dataMovie.backdropPath.toString(),
+                      dataMovie.backdrop_path.toString(),
                   loadingBuilder: (BuildContext context, Widget child,
                       ImageChunkEvent? loadingProgress) {
                 if (loadingProgress == null) {
@@ -52,11 +52,11 @@ class CardMovies extends StatelessWidget {
                 padding: EdgeInsets.only(top: 10, left: 20),
                 child: Text(
                   textAlign: TextAlign.left,
-                  dataMovie.releaseDate.toString(),
+                  dataMovie.release_date.toString(),
                   style: TextStyle(fontSize: 15),
                 ),
               ),
-              Stars(vote: dataMovie.voteAverage!),
+              Stars(vote: dataMovie.vote_average),
             ],
           ),
           shape: RoundedRectangleBorder(
