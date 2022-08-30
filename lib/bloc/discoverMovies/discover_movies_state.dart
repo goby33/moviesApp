@@ -2,7 +2,7 @@
 
 
 
-import '../../models/discoverMovies/discover_movies_models.dart';
+import '../../models/discoverMovies/results_discover_movies/discover_movies_models.dart';
 
 abstract class DiscoverMoviesState {}
 

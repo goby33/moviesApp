@@ -1,155 +1,97 @@
-import 'package:app_movies/models/movieDetails/production_companies.dart';
-import 'package:app_movies/models/movieDetails/production_countries.dart';
-import 'package:app_movies/models/movieDetails/spoken_languages.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'belongs_to_collection.dart';
-import 'genres.dart';
+part  'movies_details_models.g.dart';
+part  'movies_details_models.freezed.dart';
 
-class MoviesDetailsModels {
-  bool? adult;
-  String? backdropPath;
-  BelongsToCollection? belongsToCollection;
-  int? budget;
-  List<Genres>? genres;
-  String? homepage;
-  int? id;
-  String? imdbId;
-  String? originalLanguage;
-  String? originalTitle;
-  String? overview;
-  double? popularity;
-  String? posterPath;
-  List<ProductionCompanies>? productionCompanies;
-  List<ProductionCountries>? productionCountries;
-  String? releaseDate;
-  int? revenue;
-  int? runtime;
-  List<SpokenLanguages>? spokenLanguages;
-  String? status;
-  String? tagline;
-  String? title;
-  bool? video;
-  double? voteAverage;
-  int? voteCount;
+@Freezed()
+class MoviesDetailsModels with _$MoviesDetailsModels {
+  const factory MoviesDetailsModels({
+    required bool adult,
+    required String backdrop_path,
+    required BelongsToCollectionModels belongs_to_collection,
+    required int budget,
+    required List<GenresModels> genres,
+    required String homepage,
+    required int id,
+    required String imdb_id,
+    required String original_language,
+    required String original_title,
+    required String overview,
+    required double popularity,
+    required String poster_path,
+    required List<ProductionCompaniesModels> production_companies,
+    required List<ProductionCountriesModels> production_countries,
+    required String release_date,
+    required int revenue,
+    required int runtime,
+    required List<SpokenLanguagesModels> spoken_languages,
+    required String status,
+    required String tagline,
+    required String title,
+    required bool video,
+    required num vote_average,
+    required num vote_count,
+  }) = _MoviesDetailsModels;
 
-  MoviesDetailsModels(
-      {this.adult,
-        this.backdropPath,
-        this.belongsToCollection,
-        this.budget,
-        this.genres,
-        this.homepage,
-        this.id,
-        this.imdbId,
-        this.originalLanguage,
-        this.originalTitle,
-        this.overview,
-        this.popularity,
-        this.posterPath,
-        this.productionCompanies,
-        this.productionCountries,
-        this.releaseDate,
-        this.revenue,
-        this.runtime,
-        this.spokenLanguages,
-        this.status,
-        this.tagline,
-        this.title,
-        this.video,
-        this.voteAverage,
-        this.voteCount});
-
-  MoviesDetailsModels.fromJson(Map<String, dynamic> json) {
-    adult = json['adult'];
-    backdropPath = json['backdrop_path'];
-    belongsToCollection = json['belongs_to_collection'] != null
-        ? new BelongsToCollection.fromJson(json['belongs_to_collection'])
-        : null;
-    budget = json['budget'];
-    if (json['genres'] != null) {
-      genres = <Genres>[];
-      json['genres'].forEach((v) {
-        genres!.add(new Genres.fromJson(v));
-      });
-    }
-    homepage = json['homepage'];
-    id = json['id'];
-    imdbId = json['imdb_id'];
-    originalLanguage = json['original_language'];
-    originalTitle = json['original_title'];
-    overview = json['overview'];
-    popularity = json['popularity'];
-    posterPath = json['poster_path'];
-    if (json['production_companies'] != null) {
-      productionCompanies = <ProductionCompanies>[];
-      json['production_companies'].forEach((v) {
-        productionCompanies!.add(new ProductionCompanies.fromJson(v));
-      });
-    }
-    if (json['production_countries'] != null) {
-      productionCountries = <ProductionCountries>[];
-      json['production_countries'].forEach((v) {
-        productionCountries!.add(new ProductionCountries.fromJson(v));
-      });
-    }
-    releaseDate = json['release_date'];
-    revenue = json['revenue'];
-    runtime = json['runtime'];
-    if (json['spoken_languages'] != null) {
-      spokenLanguages = <SpokenLanguages>[];
-      json['spoken_languages'].forEach((v) {
-        spokenLanguages!.add(new SpokenLanguages.fromJson(v));
-      });
-    }
-    status = json['status'];
-    tagline = json['tagline'];
-    title = json['title'];
-    video = json['video'];
-    voteAverage = json['vote_average'];
-    voteCount = json['vote_count'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['adult'] = this.adult;
-    data['backdrop_path'] = this.backdropPath;
-    if (this.belongsToCollection != null) {
-      data['belongs_to_collection'] = this.belongsToCollection!.toJson();
-    }
-    data['budget'] = this.budget;
-    if (this.genres != null) {
-      data['genres'] = this.genres!.map((v) => v.toJson()).toList();
-    }
-    data['homepage'] = this.homepage;
-    data['id'] = this.id;
-    data['imdb_id'] = this.imdbId;
-    data['original_language'] = this.originalLanguage;
-    data['original_title'] = this.originalTitle;
-    data['overview'] = this.overview;
-    data['popularity'] = this.popularity;
-    data['poster_path'] = this.posterPath;
-    if (this.productionCompanies != null) {
-      data['production_companies'] =
-          this.productionCompanies!.map((v) => v.toJson()).toList();
-    }
-    if (this.productionCountries != null) {
-      data['production_countries'] =
-          this.productionCountries!.map((v) => v.toJson()).toList();
-    }
-    data['release_date'] = this.releaseDate;
-    data['revenue'] = this.revenue;
-    data['runtime'] = this.runtime;
-    if (this.spokenLanguages != null) {
-      data['spoken_languages'] =
-          this.spokenLanguages!.map((v) => v.toJson()).toList();
-    }
-    data['status'] = this.status;
-    data['tagline'] = this.tagline;
-    data['title'] = this.title;
-    data['video'] = this.video;
-    data['vote_average'] = this.voteAverage;
-    data['vote_count'] = this.voteCount;
-    return data;
-  }
+  factory MoviesDetailsModels.fromJson(Map<String, Object?> json) =>
+      _$MoviesDetailsModelsFromJson(json);
 }
 
+@Freezed()
+class GenresModels with _$GenresModels {
+  const factory GenresModels({
+    required int id,
+    required String name,
+  }) = _GenresModels;
+  factory GenresModels.fromJson(Map<String, Object?> json) =>
+      _$GenresModelsFromJson(json);
+}
+
+@Freezed()
+class BelongsToCollectionModels with _$BelongsToCollectionModels {
+  const factory BelongsToCollectionModels({
+    required int id,
+    required String name,
+    required String poster_path,
+    required String backdrop_path,
+  }) = _BelongsToCollectionModels;
+
+  factory BelongsToCollectionModels.fromJson(Map<String, Object?> json) =>
+      _$BelongsToCollectionModelsFromJson(json);
+}
+
+@Freezed()
+class ProductionCompaniesModels with _$ProductionCompaniesModels {
+  const factory ProductionCompaniesModels({
+    required int id,
+    required String? logo_path,
+    required String name,
+    required String origin_country,
+  }) = _ProductionCompaniesModels;
+
+  factory ProductionCompaniesModels.fromJson(Map<String, Object?> json) =>
+      _$ProductionCompaniesModelsFromJson(json);
+}
+
+@Freezed()
+class ProductionCountriesModels with _$ProductionCountriesModels {
+  const factory ProductionCountriesModels({
+    required String iso_3166_1,
+    required String name,
+  }) = _ProductionCountriesModels;
+
+  factory ProductionCountriesModels.fromJson(Map<String, Object?> json) =>
+      _$ProductionCountriesModelsFromJson(json);
+}
+
+@Freezed()
+class SpokenLanguagesModels with _$SpokenLanguagesModels {
+  const factory SpokenLanguagesModels({
+    required String english_name,
+    required String iso_639_1,
+    required String name,
+  }) = _SpokenLanguagesModels;
+
+  factory SpokenLanguagesModels.fromJson(Map<String, Object?> json) =>
+      _$SpokenLanguagesModelsFromJson(json);
+}
