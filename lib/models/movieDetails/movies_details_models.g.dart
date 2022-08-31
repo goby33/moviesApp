@@ -9,42 +9,45 @@ part of 'movies_details_models.dart';
 _$_MoviesDetailsModels _$$_MoviesDetailsModelsFromJson(
         Map<String, dynamic> json) =>
     _$_MoviesDetailsModels(
-      adult: json['adult'] as bool,
-      backdrop_path: json['backdrop_path'] as String,
-      belongs_to_collection: BelongsToCollectionModels.fromJson(
-          json['belongs_to_collection'] as Map<String, dynamic>),
-      budget: json['budget'] as int,
-      genres: (json['genres'] as List<dynamic>)
-          .map((e) => GenresModels.fromJson(e as Map<String, dynamic>))
+      adult: json['adult'] as bool?,
+      backdrop_path: json['backdrop_path'] as String?,
+      belongs_to_collection: json['belongs_to_collection'] == null
+          ? null
+          : BelongsToCollectionModels.fromJson(
+              json['belongs_to_collection'] as Map<String, dynamic>),
+      budget: json['budget'] as int?,
+      genres: (json['genres'] as List<dynamic>?)
+          ?.map((e) => GenresModels.fromJson(e as Map<String, dynamic>))
           .toList(),
-      homepage: json['homepage'] as String,
-      id: json['id'] as int,
-      imdb_id: json['imdb_id'] as String,
-      original_language: json['original_language'] as String,
-      original_title: json['original_title'] as String,
-      overview: json['overview'] as String,
-      popularity: (json['popularity'] as num).toDouble(),
-      poster_path: json['poster_path'] as String,
-      production_companies: (json['production_companies'] as List<dynamic>)
-          .map((e) =>
+      homepage: json['homepage'] as String?,
+      id: json['id'] as int?,
+      imdb_id: json['imdb_id'] as String?,
+      original_language: json['original_language'] as String?,
+      original_title: json['original_title'] as String?,
+      overview: json['overview'] as String?,
+      popularity: (json['popularity'] as num?)?.toDouble(),
+      poster_path: json['poster_path'] as String?,
+      production_companies: (json['production_companies'] as List<dynamic>?)
+          ?.map((e) =>
               ProductionCompaniesModels.fromJson(e as Map<String, dynamic>))
           .toList(),
-      production_countries: (json['production_countries'] as List<dynamic>)
-          .map((e) =>
+      production_countries: (json['production_countries'] as List<dynamic>?)
+          ?.map((e) =>
               ProductionCountriesModels.fromJson(e as Map<String, dynamic>))
           .toList(),
-      release_date: json['release_date'] as String,
-      revenue: json['revenue'] as int,
-      runtime: json['runtime'] as int,
-      spoken_languages: (json['spoken_languages'] as List<dynamic>)
-          .map((e) => SpokenLanguagesModels.fromJson(e as Map<String, dynamic>))
+      release_date: json['release_date'] as String?,
+      revenue: json['revenue'] as int?,
+      runtime: json['runtime'] as int?,
+      spoken_languages: (json['spoken_languages'] as List<dynamic>?)
+          ?.map(
+              (e) => SpokenLanguagesModels.fromJson(e as Map<String, dynamic>))
           .toList(),
-      status: json['status'] as String,
-      tagline: json['tagline'] as String,
-      title: json['title'] as String,
-      video: json['video'] as bool,
-      vote_average: json['vote_average'] as num,
-      vote_count: json['vote_count'] as num,
+      status: json['status'] as String?,
+      tagline: json['tagline'] as String?,
+      title: json['title'] as String?,
+      video: json['video'] as bool?,
+      vote_average: json['vote_average'] as num?,
+      vote_count: json['vote_count'] as num?,
     );
 
 Map<String, dynamic> _$$_MoviesDetailsModelsToJson(
@@ -79,8 +82,8 @@ Map<String, dynamic> _$$_MoviesDetailsModelsToJson(
 
 _$_GenresModels _$$_GenresModelsFromJson(Map<String, dynamic> json) =>
     _$_GenresModels(
-      id: json['id'] as int,
-      name: json['name'] as String,
+      id: json['id'] as int?,
+      name: json['name'] as String?,
     );
 
 Map<String, dynamic> _$$_GenresModelsToJson(_$_GenresModels instance) =>
@@ -92,10 +95,10 @@ Map<String, dynamic> _$$_GenresModelsToJson(_$_GenresModels instance) =>
 _$_BelongsToCollectionModels _$$_BelongsToCollectionModelsFromJson(
         Map<String, dynamic> json) =>
     _$_BelongsToCollectionModels(
-      id: json['id'] as int,
-      name: json['name'] as String,
-      poster_path: json['poster_path'] as String,
-      backdrop_path: json['backdrop_path'] as String,
+      id: json['id'] as int?,
+      name: json['name'] as String?,
+      poster_path: json['poster_path'] as String?,
+      backdrop_path: json['backdrop_path'] as String?,
     );
 
 Map<String, dynamic> _$$_BelongsToCollectionModelsToJson(
@@ -110,10 +113,10 @@ Map<String, dynamic> _$$_BelongsToCollectionModelsToJson(
 _$_ProductionCompaniesModels _$$_ProductionCompaniesModelsFromJson(
         Map<String, dynamic> json) =>
     _$_ProductionCompaniesModels(
-      id: json['id'] as int,
+      id: json['id'] as int?,
       logo_path: json['logo_path'] as String?,
-      name: json['name'] as String,
-      origin_country: json['origin_country'] as String,
+      name: json['name'] as String?,
+      origin_country: json['origin_country'] as String?,
     );
 
 Map<String, dynamic> _$$_ProductionCompaniesModelsToJson(
@@ -128,8 +131,8 @@ Map<String, dynamic> _$$_ProductionCompaniesModelsToJson(
 _$_ProductionCountriesModels _$$_ProductionCountriesModelsFromJson(
         Map<String, dynamic> json) =>
     _$_ProductionCountriesModels(
-      iso_3166_1: json['iso_3166_1'] as String,
-      name: json['name'] as String,
+      iso_3166_1: json['iso_3166_1'] as String?,
+      name: json['name'] as String?,
     );
 
 Map<String, dynamic> _$$_ProductionCountriesModelsToJson(
@@ -142,9 +145,9 @@ Map<String, dynamic> _$$_ProductionCountriesModelsToJson(
 _$_SpokenLanguagesModels _$$_SpokenLanguagesModelsFromJson(
         Map<String, dynamic> json) =>
     _$_SpokenLanguagesModels(
-      english_name: json['english_name'] as String,
-      iso_639_1: json['iso_639_1'] as String,
-      name: json['name'] as String,
+      english_name: json['english_name'] as String?,
+      iso_639_1: json['iso_639_1'] as String?,
+      name: json['name'] as String?,
     );
 
 Map<String, dynamic> _$$_SpokenLanguagesModelsToJson(

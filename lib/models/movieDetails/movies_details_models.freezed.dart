@@ -20,35 +20,35 @@ MoviesDetailsModels _$MoviesDetailsModelsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$MoviesDetailsModels {
-  bool get adult => throw _privateConstructorUsedError;
-  String get backdrop_path => throw _privateConstructorUsedError;
-  BelongsToCollectionModels get belongs_to_collection =>
+  bool? get adult => throw _privateConstructorUsedError;
+  String? get backdrop_path => throw _privateConstructorUsedError;
+  BelongsToCollectionModels? get belongs_to_collection =>
       throw _privateConstructorUsedError;
-  int get budget => throw _privateConstructorUsedError;
-  List<GenresModels> get genres => throw _privateConstructorUsedError;
-  String get homepage => throw _privateConstructorUsedError;
-  int get id => throw _privateConstructorUsedError;
-  String get imdb_id => throw _privateConstructorUsedError;
-  String get original_language => throw _privateConstructorUsedError;
-  String get original_title => throw _privateConstructorUsedError;
-  String get overview => throw _privateConstructorUsedError;
-  double get popularity => throw _privateConstructorUsedError;
-  String get poster_path => throw _privateConstructorUsedError;
-  List<ProductionCompaniesModels> get production_companies =>
+  int? get budget => throw _privateConstructorUsedError;
+  List<GenresModels>? get genres => throw _privateConstructorUsedError;
+  String? get homepage => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  String? get imdb_id => throw _privateConstructorUsedError;
+  String? get original_language => throw _privateConstructorUsedError;
+  String? get original_title => throw _privateConstructorUsedError;
+  String? get overview => throw _privateConstructorUsedError;
+  double? get popularity => throw _privateConstructorUsedError;
+  String? get poster_path => throw _privateConstructorUsedError;
+  List<ProductionCompaniesModels>? get production_companies =>
       throw _privateConstructorUsedError;
-  List<ProductionCountriesModels> get production_countries =>
+  List<ProductionCountriesModels>? get production_countries =>
       throw _privateConstructorUsedError;
-  String get release_date => throw _privateConstructorUsedError;
-  int get revenue => throw _privateConstructorUsedError;
-  int get runtime => throw _privateConstructorUsedError;
-  List<SpokenLanguagesModels> get spoken_languages =>
+  String? get release_date => throw _privateConstructorUsedError;
+  int? get revenue => throw _privateConstructorUsedError;
+  int? get runtime => throw _privateConstructorUsedError;
+  List<SpokenLanguagesModels>? get spoken_languages =>
       throw _privateConstructorUsedError;
-  String get status => throw _privateConstructorUsedError;
-  String get tagline => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  bool get video => throw _privateConstructorUsedError;
-  num get vote_average => throw _privateConstructorUsedError;
-  num get vote_count => throw _privateConstructorUsedError;
+  String? get status => throw _privateConstructorUsedError;
+  String? get tagline => throw _privateConstructorUsedError;
+  String? get title => throw _privateConstructorUsedError;
+  bool? get video => throw _privateConstructorUsedError;
+  num? get vote_average => throw _privateConstructorUsedError;
+  num? get vote_count => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -62,33 +62,33 @@ abstract class $MoviesDetailsModelsCopyWith<$Res> {
           MoviesDetailsModels value, $Res Function(MoviesDetailsModels) then) =
       _$MoviesDetailsModelsCopyWithImpl<$Res>;
   $Res call(
-      {bool adult,
-      String backdrop_path,
-      BelongsToCollectionModels belongs_to_collection,
-      int budget,
-      List<GenresModels> genres,
-      String homepage,
-      int id,
-      String imdb_id,
-      String original_language,
-      String original_title,
-      String overview,
-      double popularity,
-      String poster_path,
-      List<ProductionCompaniesModels> production_companies,
-      List<ProductionCountriesModels> production_countries,
-      String release_date,
-      int revenue,
-      int runtime,
-      List<SpokenLanguagesModels> spoken_languages,
-      String status,
-      String tagline,
-      String title,
-      bool video,
-      num vote_average,
-      num vote_count});
+      {bool? adult,
+      String? backdrop_path,
+      BelongsToCollectionModels? belongs_to_collection,
+      int? budget,
+      List<GenresModels>? genres,
+      String? homepage,
+      int? id,
+      String? imdb_id,
+      String? original_language,
+      String? original_title,
+      String? overview,
+      double? popularity,
+      String? poster_path,
+      List<ProductionCompaniesModels>? production_companies,
+      List<ProductionCountriesModels>? production_countries,
+      String? release_date,
+      int? revenue,
+      int? runtime,
+      List<SpokenLanguagesModels>? spoken_languages,
+      String? status,
+      String? tagline,
+      String? title,
+      bool? video,
+      num? vote_average,
+      num? vote_count});
 
-  $BelongsToCollectionModelsCopyWith<$Res> get belongs_to_collection;
+  $BelongsToCollectionModelsCopyWith<$Res>? get belongs_to_collection;
 }
 
 /// @nodoc
@@ -132,110 +132,114 @@ class _$MoviesDetailsModelsCopyWithImpl<$Res>
       adult: adult == freezed
           ? _value.adult
           : adult // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       backdrop_path: backdrop_path == freezed
           ? _value.backdrop_path
           : backdrop_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       belongs_to_collection: belongs_to_collection == freezed
           ? _value.belongs_to_collection
           : belongs_to_collection // ignore: cast_nullable_to_non_nullable
-              as BelongsToCollectionModels,
+              as BelongsToCollectionModels?,
       budget: budget == freezed
           ? _value.budget
           : budget // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       genres: genres == freezed
           ? _value.genres
           : genres // ignore: cast_nullable_to_non_nullable
-              as List<GenresModels>,
+              as List<GenresModels>?,
       homepage: homepage == freezed
           ? _value.homepage
           : homepage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       imdb_id: imdb_id == freezed
           ? _value.imdb_id
           : imdb_id // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       original_language: original_language == freezed
           ? _value.original_language
           : original_language // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       original_title: original_title == freezed
           ? _value.original_title
           : original_title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       overview: overview == freezed
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       popularity: popularity == freezed
           ? _value.popularity
           : popularity // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       poster_path: poster_path == freezed
           ? _value.poster_path
           : poster_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       production_companies: production_companies == freezed
           ? _value.production_companies
           : production_companies // ignore: cast_nullable_to_non_nullable
-              as List<ProductionCompaniesModels>,
+              as List<ProductionCompaniesModels>?,
       production_countries: production_countries == freezed
           ? _value.production_countries
           : production_countries // ignore: cast_nullable_to_non_nullable
-              as List<ProductionCountriesModels>,
+              as List<ProductionCountriesModels>?,
       release_date: release_date == freezed
           ? _value.release_date
           : release_date // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       revenue: revenue == freezed
           ? _value.revenue
           : revenue // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       runtime: runtime == freezed
           ? _value.runtime
           : runtime // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       spoken_languages: spoken_languages == freezed
           ? _value.spoken_languages
           : spoken_languages // ignore: cast_nullable_to_non_nullable
-              as List<SpokenLanguagesModels>,
+              as List<SpokenLanguagesModels>?,
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tagline: tagline == freezed
           ? _value.tagline
           : tagline // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       video: video == freezed
           ? _value.video
           : video // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       vote_average: vote_average == freezed
           ? _value.vote_average
           : vote_average // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
       vote_count: vote_count == freezed
           ? _value.vote_count
           : vote_count // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
     ));
   }
 
   @override
-  $BelongsToCollectionModelsCopyWith<$Res> get belongs_to_collection {
+  $BelongsToCollectionModelsCopyWith<$Res>? get belongs_to_collection {
+    if (_value.belongs_to_collection == null) {
+      return null;
+    }
+
     return $BelongsToCollectionModelsCopyWith<$Res>(
-        _value.belongs_to_collection, (value) {
+        _value.belongs_to_collection!, (value) {
       return _then(_value.copyWith(belongs_to_collection: value));
     });
   }
@@ -249,34 +253,34 @@ abstract class _$$_MoviesDetailsModelsCopyWith<$Res>
       __$$_MoviesDetailsModelsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {bool adult,
-      String backdrop_path,
-      BelongsToCollectionModels belongs_to_collection,
-      int budget,
-      List<GenresModels> genres,
-      String homepage,
-      int id,
-      String imdb_id,
-      String original_language,
-      String original_title,
-      String overview,
-      double popularity,
-      String poster_path,
-      List<ProductionCompaniesModels> production_companies,
-      List<ProductionCountriesModels> production_countries,
-      String release_date,
-      int revenue,
-      int runtime,
-      List<SpokenLanguagesModels> spoken_languages,
-      String status,
-      String tagline,
-      String title,
-      bool video,
-      num vote_average,
-      num vote_count});
+      {bool? adult,
+      String? backdrop_path,
+      BelongsToCollectionModels? belongs_to_collection,
+      int? budget,
+      List<GenresModels>? genres,
+      String? homepage,
+      int? id,
+      String? imdb_id,
+      String? original_language,
+      String? original_title,
+      String? overview,
+      double? popularity,
+      String? poster_path,
+      List<ProductionCompaniesModels>? production_companies,
+      List<ProductionCountriesModels>? production_countries,
+      String? release_date,
+      int? revenue,
+      int? runtime,
+      List<SpokenLanguagesModels>? spoken_languages,
+      String? status,
+      String? tagline,
+      String? title,
+      bool? video,
+      num? vote_average,
+      num? vote_count});
 
   @override
-  $BelongsToCollectionModelsCopyWith<$Res> get belongs_to_collection;
+  $BelongsToCollectionModelsCopyWith<$Res>? get belongs_to_collection;
 }
 
 /// @nodoc
@@ -322,103 +326,103 @@ class __$$_MoviesDetailsModelsCopyWithImpl<$Res>
       adult: adult == freezed
           ? _value.adult
           : adult // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       backdrop_path: backdrop_path == freezed
           ? _value.backdrop_path
           : backdrop_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       belongs_to_collection: belongs_to_collection == freezed
           ? _value.belongs_to_collection
           : belongs_to_collection // ignore: cast_nullable_to_non_nullable
-              as BelongsToCollectionModels,
+              as BelongsToCollectionModels?,
       budget: budget == freezed
           ? _value.budget
           : budget // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       genres: genres == freezed
           ? _value._genres
           : genres // ignore: cast_nullable_to_non_nullable
-              as List<GenresModels>,
+              as List<GenresModels>?,
       homepage: homepage == freezed
           ? _value.homepage
           : homepage // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       imdb_id: imdb_id == freezed
           ? _value.imdb_id
           : imdb_id // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       original_language: original_language == freezed
           ? _value.original_language
           : original_language // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       original_title: original_title == freezed
           ? _value.original_title
           : original_title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       overview: overview == freezed
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       popularity: popularity == freezed
           ? _value.popularity
           : popularity // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       poster_path: poster_path == freezed
           ? _value.poster_path
           : poster_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       production_companies: production_companies == freezed
           ? _value._production_companies
           : production_companies // ignore: cast_nullable_to_non_nullable
-              as List<ProductionCompaniesModels>,
+              as List<ProductionCompaniesModels>?,
       production_countries: production_countries == freezed
           ? _value._production_countries
           : production_countries // ignore: cast_nullable_to_non_nullable
-              as List<ProductionCountriesModels>,
+              as List<ProductionCountriesModels>?,
       release_date: release_date == freezed
           ? _value.release_date
           : release_date // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       revenue: revenue == freezed
           ? _value.revenue
           : revenue // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       runtime: runtime == freezed
           ? _value.runtime
           : runtime // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       spoken_languages: spoken_languages == freezed
           ? _value._spoken_languages
           : spoken_languages // ignore: cast_nullable_to_non_nullable
-              as List<SpokenLanguagesModels>,
+              as List<SpokenLanguagesModels>?,
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       tagline: tagline == freezed
           ? _value.tagline
           : tagline // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       video: video == freezed
           ? _value.video
           : video // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       vote_average: vote_average == freezed
           ? _value.vote_average
           : vote_average // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
       vote_count: vote_count == freezed
           ? _value.vote_count
           : vote_count // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
     ));
   }
 }
@@ -431,7 +435,7 @@ class _$_MoviesDetailsModels implements _MoviesDetailsModels {
       required this.backdrop_path,
       required this.belongs_to_collection,
       required this.budget,
-      required final List<GenresModels> genres,
+      required final List<GenresModels>? genres,
       required this.homepage,
       required this.id,
       required this.imdb_id,
@@ -440,12 +444,12 @@ class _$_MoviesDetailsModels implements _MoviesDetailsModels {
       required this.overview,
       required this.popularity,
       required this.poster_path,
-      required final List<ProductionCompaniesModels> production_companies,
-      required final List<ProductionCountriesModels> production_countries,
+      required final List<ProductionCompaniesModels>? production_companies,
+      required final List<ProductionCountriesModels>? production_countries,
       required this.release_date,
       required this.revenue,
       required this.runtime,
-      required final List<SpokenLanguagesModels> spoken_languages,
+      required final List<SpokenLanguagesModels>? spoken_languages,
       required this.status,
       required this.tagline,
       required this.title,
@@ -461,75 +465,83 @@ class _$_MoviesDetailsModels implements _MoviesDetailsModels {
       _$$_MoviesDetailsModelsFromJson(json);
 
   @override
-  final bool adult;
+  final bool? adult;
   @override
-  final String backdrop_path;
+  final String? backdrop_path;
   @override
-  final BelongsToCollectionModels belongs_to_collection;
+  final BelongsToCollectionModels? belongs_to_collection;
   @override
-  final int budget;
-  final List<GenresModels> _genres;
+  final int? budget;
+  final List<GenresModels>? _genres;
   @override
-  List<GenresModels> get genres {
+  List<GenresModels>? get genres {
+    final value = _genres;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_genres);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
-  final String homepage;
+  final String? homepage;
   @override
-  final int id;
+  final int? id;
   @override
-  final String imdb_id;
+  final String? imdb_id;
   @override
-  final String original_language;
+  final String? original_language;
   @override
-  final String original_title;
+  final String? original_title;
   @override
-  final String overview;
+  final String? overview;
   @override
-  final double popularity;
+  final double? popularity;
   @override
-  final String poster_path;
-  final List<ProductionCompaniesModels> _production_companies;
+  final String? poster_path;
+  final List<ProductionCompaniesModels>? _production_companies;
   @override
-  List<ProductionCompaniesModels> get production_companies {
+  List<ProductionCompaniesModels>? get production_companies {
+    final value = _production_companies;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_production_companies);
+    return EqualUnmodifiableListView(value);
   }
 
-  final List<ProductionCountriesModels> _production_countries;
+  final List<ProductionCountriesModels>? _production_countries;
   @override
-  List<ProductionCountriesModels> get production_countries {
+  List<ProductionCountriesModels>? get production_countries {
+    final value = _production_countries;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_production_countries);
-  }
-
-  @override
-  final String release_date;
-  @override
-  final int revenue;
-  @override
-  final int runtime;
-  final List<SpokenLanguagesModels> _spoken_languages;
-  @override
-  List<SpokenLanguagesModels> get spoken_languages {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_spoken_languages);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
-  final String status;
+  final String? release_date;
   @override
-  final String tagline;
+  final int? revenue;
   @override
-  final String title;
+  final int? runtime;
+  final List<SpokenLanguagesModels>? _spoken_languages;
   @override
-  final bool video;
+  List<SpokenLanguagesModels>? get spoken_languages {
+    final value = _spoken_languages;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
   @override
-  final num vote_average;
+  final String? status;
   @override
-  final num vote_count;
+  final String? tagline;
+  @override
+  final String? title;
+  @override
+  final bool? video;
+  @override
+  final num? vote_average;
+  @override
+  final num? vote_count;
 
   @override
   String toString() {
@@ -627,85 +639,85 @@ class _$_MoviesDetailsModels implements _MoviesDetailsModels {
 
 abstract class _MoviesDetailsModels implements MoviesDetailsModels {
   const factory _MoviesDetailsModels(
-      {required final bool adult,
-      required final String backdrop_path,
-      required final BelongsToCollectionModels belongs_to_collection,
-      required final int budget,
-      required final List<GenresModels> genres,
-      required final String homepage,
-      required final int id,
-      required final String imdb_id,
-      required final String original_language,
-      required final String original_title,
-      required final String overview,
-      required final double popularity,
-      required final String poster_path,
-      required final List<ProductionCompaniesModels> production_companies,
-      required final List<ProductionCountriesModels> production_countries,
-      required final String release_date,
-      required final int revenue,
-      required final int runtime,
-      required final List<SpokenLanguagesModels> spoken_languages,
-      required final String status,
-      required final String tagline,
-      required final String title,
-      required final bool video,
-      required final num vote_average,
-      required final num vote_count}) = _$_MoviesDetailsModels;
+      {required final bool? adult,
+      required final String? backdrop_path,
+      required final BelongsToCollectionModels? belongs_to_collection,
+      required final int? budget,
+      required final List<GenresModels>? genres,
+      required final String? homepage,
+      required final int? id,
+      required final String? imdb_id,
+      required final String? original_language,
+      required final String? original_title,
+      required final String? overview,
+      required final double? popularity,
+      required final String? poster_path,
+      required final List<ProductionCompaniesModels>? production_companies,
+      required final List<ProductionCountriesModels>? production_countries,
+      required final String? release_date,
+      required final int? revenue,
+      required final int? runtime,
+      required final List<SpokenLanguagesModels>? spoken_languages,
+      required final String? status,
+      required final String? tagline,
+      required final String? title,
+      required final bool? video,
+      required final num? vote_average,
+      required final num? vote_count}) = _$_MoviesDetailsModels;
 
   factory _MoviesDetailsModels.fromJson(Map<String, dynamic> json) =
       _$_MoviesDetailsModels.fromJson;
 
   @override
-  bool get adult;
+  bool? get adult;
   @override
-  String get backdrop_path;
+  String? get backdrop_path;
   @override
-  BelongsToCollectionModels get belongs_to_collection;
+  BelongsToCollectionModels? get belongs_to_collection;
   @override
-  int get budget;
+  int? get budget;
   @override
-  List<GenresModels> get genres;
+  List<GenresModels>? get genres;
   @override
-  String get homepage;
+  String? get homepage;
   @override
-  int get id;
+  int? get id;
   @override
-  String get imdb_id;
+  String? get imdb_id;
   @override
-  String get original_language;
+  String? get original_language;
   @override
-  String get original_title;
+  String? get original_title;
   @override
-  String get overview;
+  String? get overview;
   @override
-  double get popularity;
+  double? get popularity;
   @override
-  String get poster_path;
+  String? get poster_path;
   @override
-  List<ProductionCompaniesModels> get production_companies;
+  List<ProductionCompaniesModels>? get production_companies;
   @override
-  List<ProductionCountriesModels> get production_countries;
+  List<ProductionCountriesModels>? get production_countries;
   @override
-  String get release_date;
+  String? get release_date;
   @override
-  int get revenue;
+  int? get revenue;
   @override
-  int get runtime;
+  int? get runtime;
   @override
-  List<SpokenLanguagesModels> get spoken_languages;
+  List<SpokenLanguagesModels>? get spoken_languages;
   @override
-  String get status;
+  String? get status;
   @override
-  String get tagline;
+  String? get tagline;
   @override
-  String get title;
+  String? get title;
   @override
-  bool get video;
+  bool? get video;
   @override
-  num get vote_average;
+  num? get vote_average;
   @override
-  num get vote_count;
+  num? get vote_count;
   @override
   @JsonKey(ignore: true)
   _$$_MoviesDetailsModelsCopyWith<_$_MoviesDetailsModels> get copyWith =>
@@ -718,8 +730,8 @@ GenresModels _$GenresModelsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$GenresModels {
-  int get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -732,7 +744,7 @@ abstract class $GenresModelsCopyWith<$Res> {
   factory $GenresModelsCopyWith(
           GenresModels value, $Res Function(GenresModels) then) =
       _$GenresModelsCopyWithImpl<$Res>;
-  $Res call({int id, String name});
+  $Res call({int? id, String? name});
 }
 
 /// @nodoc
@@ -752,11 +764,11 @@ class _$GenresModelsCopyWithImpl<$Res> implements $GenresModelsCopyWith<$Res> {
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -768,7 +780,7 @@ abstract class _$$_GenresModelsCopyWith<$Res>
           _$_GenresModels value, $Res Function(_$_GenresModels) then) =
       __$$_GenresModelsCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String name});
+  $Res call({int? id, String? name});
 }
 
 /// @nodoc
@@ -791,11 +803,11 @@ class __$$_GenresModelsCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -809,9 +821,9 @@ class _$_GenresModels implements _GenresModels {
       _$$_GenresModelsFromJson(json);
 
   @override
-  final int id;
+  final int? id;
   @override
-  final String name;
+  final String? name;
 
   @override
   String toString() {
@@ -849,15 +861,15 @@ class _$_GenresModels implements _GenresModels {
 
 abstract class _GenresModels implements GenresModels {
   const factory _GenresModels(
-      {required final int id, required final String name}) = _$_GenresModels;
+      {required final int? id, required final String? name}) = _$_GenresModels;
 
   factory _GenresModels.fromJson(Map<String, dynamic> json) =
       _$_GenresModels.fromJson;
 
   @override
-  int get id;
+  int? get id;
   @override
-  String get name;
+  String? get name;
   @override
   @JsonKey(ignore: true)
   _$$_GenresModelsCopyWith<_$_GenresModels> get copyWith =>
@@ -871,10 +883,10 @@ BelongsToCollectionModels _$BelongsToCollectionModelsFromJson(
 
 /// @nodoc
 mixin _$BelongsToCollectionModels {
-  int get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get poster_path => throw _privateConstructorUsedError;
-  String get backdrop_path => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
+  String? get poster_path => throw _privateConstructorUsedError;
+  String? get backdrop_path => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -887,7 +899,8 @@ abstract class $BelongsToCollectionModelsCopyWith<$Res> {
   factory $BelongsToCollectionModelsCopyWith(BelongsToCollectionModels value,
           $Res Function(BelongsToCollectionModels) then) =
       _$BelongsToCollectionModelsCopyWithImpl<$Res>;
-  $Res call({int id, String name, String poster_path, String backdrop_path});
+  $Res call(
+      {int? id, String? name, String? poster_path, String? backdrop_path});
 }
 
 /// @nodoc
@@ -910,19 +923,19 @@ class _$BelongsToCollectionModelsCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       poster_path: poster_path == freezed
           ? _value.poster_path
           : poster_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backdrop_path: backdrop_path == freezed
           ? _value.backdrop_path
           : backdrop_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -935,7 +948,8 @@ abstract class _$$_BelongsToCollectionModelsCopyWith<$Res>
           $Res Function(_$_BelongsToCollectionModels) then) =
       __$$_BelongsToCollectionModelsCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String name, String poster_path, String backdrop_path});
+  $Res call(
+      {int? id, String? name, String? poster_path, String? backdrop_path});
 }
 
 /// @nodoc
@@ -962,19 +976,19 @@ class __$$_BelongsToCollectionModelsCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       poster_path: poster_path == freezed
           ? _value.poster_path
           : poster_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backdrop_path: backdrop_path == freezed
           ? _value.backdrop_path
           : backdrop_path // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -992,13 +1006,13 @@ class _$_BelongsToCollectionModels implements _BelongsToCollectionModels {
       _$$_BelongsToCollectionModelsFromJson(json);
 
   @override
-  final int id;
+  final int? id;
   @override
-  final String name;
+  final String? name;
   @override
-  final String poster_path;
+  final String? poster_path;
   @override
-  final String backdrop_path;
+  final String? backdrop_path;
 
   @override
   String toString() {
@@ -1043,22 +1057,22 @@ class _$_BelongsToCollectionModels implements _BelongsToCollectionModels {
 
 abstract class _BelongsToCollectionModels implements BelongsToCollectionModels {
   const factory _BelongsToCollectionModels(
-      {required final int id,
-      required final String name,
-      required final String poster_path,
-      required final String backdrop_path}) = _$_BelongsToCollectionModels;
+      {required final int? id,
+      required final String? name,
+      required final String? poster_path,
+      required final String? backdrop_path}) = _$_BelongsToCollectionModels;
 
   factory _BelongsToCollectionModels.fromJson(Map<String, dynamic> json) =
       _$_BelongsToCollectionModels.fromJson;
 
   @override
-  int get id;
+  int? get id;
   @override
-  String get name;
+  String? get name;
   @override
-  String get poster_path;
+  String? get poster_path;
   @override
-  String get backdrop_path;
+  String? get backdrop_path;
   @override
   @JsonKey(ignore: true)
   _$$_BelongsToCollectionModelsCopyWith<_$_BelongsToCollectionModels>
@@ -1072,10 +1086,10 @@ ProductionCompaniesModels _$ProductionCompaniesModelsFromJson(
 
 /// @nodoc
 mixin _$ProductionCompaniesModels {
-  int get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
   String? get logo_path => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get origin_country => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
+  String? get origin_country => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1088,7 +1102,7 @@ abstract class $ProductionCompaniesModelsCopyWith<$Res> {
   factory $ProductionCompaniesModelsCopyWith(ProductionCompaniesModels value,
           $Res Function(ProductionCompaniesModels) then) =
       _$ProductionCompaniesModelsCopyWithImpl<$Res>;
-  $Res call({int id, String? logo_path, String name, String origin_country});
+  $Res call({int? id, String? logo_path, String? name, String? origin_country});
 }
 
 /// @nodoc
@@ -1111,7 +1125,7 @@ class _$ProductionCompaniesModelsCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       logo_path: logo_path == freezed
           ? _value.logo_path
           : logo_path // ignore: cast_nullable_to_non_nullable
@@ -1119,11 +1133,11 @@ class _$ProductionCompaniesModelsCopyWithImpl<$Res>
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       origin_country: origin_country == freezed
           ? _value.origin_country
           : origin_country // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1136,7 +1150,7 @@ abstract class _$$_ProductionCompaniesModelsCopyWith<$Res>
           $Res Function(_$_ProductionCompaniesModels) then) =
       __$$_ProductionCompaniesModelsCopyWithImpl<$Res>;
   @override
-  $Res call({int id, String? logo_path, String name, String origin_country});
+  $Res call({int? id, String? logo_path, String? name, String? origin_country});
 }
 
 /// @nodoc
@@ -1163,7 +1177,7 @@ class __$$_ProductionCompaniesModelsCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       logo_path: logo_path == freezed
           ? _value.logo_path
           : logo_path // ignore: cast_nullable_to_non_nullable
@@ -1171,11 +1185,11 @@ class __$$_ProductionCompaniesModelsCopyWithImpl<$Res>
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       origin_country: origin_country == freezed
           ? _value.origin_country
           : origin_country // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1193,13 +1207,13 @@ class _$_ProductionCompaniesModels implements _ProductionCompaniesModels {
       _$$_ProductionCompaniesModelsFromJson(json);
 
   @override
-  final int id;
+  final int? id;
   @override
   final String? logo_path;
   @override
-  final String name;
+  final String? name;
   @override
-  final String origin_country;
+  final String? origin_country;
 
   @override
   String toString() {
@@ -1243,22 +1257,22 @@ class _$_ProductionCompaniesModels implements _ProductionCompaniesModels {
 
 abstract class _ProductionCompaniesModels implements ProductionCompaniesModels {
   const factory _ProductionCompaniesModels(
-      {required final int id,
+      {required final int? id,
       required final String? logo_path,
-      required final String name,
-      required final String origin_country}) = _$_ProductionCompaniesModels;
+      required final String? name,
+      required final String? origin_country}) = _$_ProductionCompaniesModels;
 
   factory _ProductionCompaniesModels.fromJson(Map<String, dynamic> json) =
       _$_ProductionCompaniesModels.fromJson;
 
   @override
-  int get id;
+  int? get id;
   @override
   String? get logo_path;
   @override
-  String get name;
+  String? get name;
   @override
-  String get origin_country;
+  String? get origin_country;
   @override
   @JsonKey(ignore: true)
   _$$_ProductionCompaniesModelsCopyWith<_$_ProductionCompaniesModels>
@@ -1272,8 +1286,8 @@ ProductionCountriesModels _$ProductionCountriesModelsFromJson(
 
 /// @nodoc
 mixin _$ProductionCountriesModels {
-  String get iso_3166_1 => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
+  String? get iso_3166_1 => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1286,7 +1300,7 @@ abstract class $ProductionCountriesModelsCopyWith<$Res> {
   factory $ProductionCountriesModelsCopyWith(ProductionCountriesModels value,
           $Res Function(ProductionCountriesModels) then) =
       _$ProductionCountriesModelsCopyWithImpl<$Res>;
-  $Res call({String iso_3166_1, String name});
+  $Res call({String? iso_3166_1, String? name});
 }
 
 /// @nodoc
@@ -1307,11 +1321,11 @@ class _$ProductionCountriesModelsCopyWithImpl<$Res>
       iso_3166_1: iso_3166_1 == freezed
           ? _value.iso_3166_1
           : iso_3166_1 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1324,7 +1338,7 @@ abstract class _$$_ProductionCountriesModelsCopyWith<$Res>
           $Res Function(_$_ProductionCountriesModels) then) =
       __$$_ProductionCountriesModelsCopyWithImpl<$Res>;
   @override
-  $Res call({String iso_3166_1, String name});
+  $Res call({String? iso_3166_1, String? name});
 }
 
 /// @nodoc
@@ -1349,11 +1363,11 @@ class __$$_ProductionCountriesModelsCopyWithImpl<$Res>
       iso_3166_1: iso_3166_1 == freezed
           ? _value.iso_3166_1
           : iso_3166_1 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1368,9 +1382,9 @@ class _$_ProductionCountriesModels implements _ProductionCountriesModels {
       _$$_ProductionCountriesModelsFromJson(json);
 
   @override
-  final String iso_3166_1;
+  final String? iso_3166_1;
   @override
-  final String name;
+  final String? name;
 
   @override
   String toString() {
@@ -1410,16 +1424,16 @@ class _$_ProductionCountriesModels implements _ProductionCountriesModels {
 
 abstract class _ProductionCountriesModels implements ProductionCountriesModels {
   const factory _ProductionCountriesModels(
-      {required final String iso_3166_1,
-      required final String name}) = _$_ProductionCountriesModels;
+      {required final String? iso_3166_1,
+      required final String? name}) = _$_ProductionCountriesModels;
 
   factory _ProductionCountriesModels.fromJson(Map<String, dynamic> json) =
       _$_ProductionCountriesModels.fromJson;
 
   @override
-  String get iso_3166_1;
+  String? get iso_3166_1;
   @override
-  String get name;
+  String? get name;
   @override
   @JsonKey(ignore: true)
   _$$_ProductionCountriesModelsCopyWith<_$_ProductionCountriesModels>
@@ -1433,9 +1447,9 @@ SpokenLanguagesModels _$SpokenLanguagesModelsFromJson(
 
 /// @nodoc
 mixin _$SpokenLanguagesModels {
-  String get english_name => throw _privateConstructorUsedError;
-  String get iso_639_1 => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
+  String? get english_name => throw _privateConstructorUsedError;
+  String? get iso_639_1 => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1448,7 +1462,7 @@ abstract class $SpokenLanguagesModelsCopyWith<$Res> {
   factory $SpokenLanguagesModelsCopyWith(SpokenLanguagesModels value,
           $Res Function(SpokenLanguagesModels) then) =
       _$SpokenLanguagesModelsCopyWithImpl<$Res>;
-  $Res call({String english_name, String iso_639_1, String name});
+  $Res call({String? english_name, String? iso_639_1, String? name});
 }
 
 /// @nodoc
@@ -1470,15 +1484,15 @@ class _$SpokenLanguagesModelsCopyWithImpl<$Res>
       english_name: english_name == freezed
           ? _value.english_name
           : english_name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       iso_639_1: iso_639_1 == freezed
           ? _value.iso_639_1
           : iso_639_1 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1490,7 +1504,7 @@ abstract class _$$_SpokenLanguagesModelsCopyWith<$Res>
           $Res Function(_$_SpokenLanguagesModels) then) =
       __$$_SpokenLanguagesModelsCopyWithImpl<$Res>;
   @override
-  $Res call({String english_name, String iso_639_1, String name});
+  $Res call({String? english_name, String? iso_639_1, String? name});
 }
 
 /// @nodoc
@@ -1515,15 +1529,15 @@ class __$$_SpokenLanguagesModelsCopyWithImpl<$Res>
       english_name: english_name == freezed
           ? _value.english_name
           : english_name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       iso_639_1: iso_639_1 == freezed
           ? _value.iso_639_1
           : iso_639_1 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -1540,11 +1554,11 @@ class _$_SpokenLanguagesModels implements _SpokenLanguagesModels {
       _$$_SpokenLanguagesModelsFromJson(json);
 
   @override
-  final String english_name;
+  final String? english_name;
   @override
-  final String iso_639_1;
+  final String? iso_639_1;
   @override
-  final String name;
+  final String? name;
 
   @override
   String toString() {
@@ -1586,19 +1600,19 @@ class _$_SpokenLanguagesModels implements _SpokenLanguagesModels {
 
 abstract class _SpokenLanguagesModels implements SpokenLanguagesModels {
   const factory _SpokenLanguagesModels(
-      {required final String english_name,
-      required final String iso_639_1,
-      required final String name}) = _$_SpokenLanguagesModels;
+      {required final String? english_name,
+      required final String? iso_639_1,
+      required final String? name}) = _$_SpokenLanguagesModels;
 
   factory _SpokenLanguagesModels.fromJson(Map<String, dynamic> json) =
       _$_SpokenLanguagesModels.fromJson;
 
   @override
-  String get english_name;
+  String? get english_name;
   @override
-  String get iso_639_1;
+  String? get iso_639_1;
   @override
-  String get name;
+  String? get name;
   @override
   @JsonKey(ignore: true)
   _$$_SpokenLanguagesModelsCopyWith<_$_SpokenLanguagesModels> get copyWith =>

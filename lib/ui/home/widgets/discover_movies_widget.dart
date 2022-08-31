@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../models/discoverMovies/results_discover_movies/discover_movies_models.dart';
+import '../../../models/discoverMovies/discover_movies_models.dart';
 import 'card_movies.dart';
 
 class DiscoverMoviesWidget extends StatelessWidget {

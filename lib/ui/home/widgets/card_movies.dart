@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/discoverMovies/results_discover_movies/discover_movies_models.dart';
+import '../../../models/discoverMovies/discover_movies_models.dart';
 import '../../widgets/stars.dart';
 
 class CardMovies extends StatelessWidget {

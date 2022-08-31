@@ -3,26 +3,19 @@ import 'package:flutter/material.dart';
 
 import 'discover_movies_screen.dart';
 
-
-
 class homeScreen extends StatelessWidget {
   const homeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    final ButtonStyle style =
+        TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary);
     return new Scaffold(
-      body: TopBar(
-        WidgetChild: DiscoverMoviesScreen()
-      ),
+        body: TopBar(WidgetChild: DiscoverMoviesScreen()),
         bottomNavigationBar: Container(
           color: Color.fromARGB(255, 255, 223, 54),
           height: 15,
-        )
-    );
+        ));
   }
 }
-
-
-
-

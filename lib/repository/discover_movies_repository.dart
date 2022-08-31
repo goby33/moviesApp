@@ -1,4 +1,4 @@
-import 'package:app_movies/models/discoverMovies/results_discover_movies/discover_movies_models.dart';
+import 'package:app_movies/models/discoverMovies/discover_movies_models.dart';
 import 'package:app_movies/network/network_helper.dart';
 import 'package:app_movies/network/network_service.dart';
 import 'package:app_movies/network/query_param.dart';
